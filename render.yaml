@@ -4,6 +4,10 @@ services:
     env: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
+    startCommand: npm run preview
+    envVars:
+      - key: PORT
+        value: 5173
     routes:
       - type: rewrite
         source: /*
