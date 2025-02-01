@@ -7,4 +7,12 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  // Add base URL configuration for production
+  base: '/',
+  // Configure build options
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    minify: true,
+  },
 });
